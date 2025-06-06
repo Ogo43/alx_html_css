@@ -18,3 +18,31 @@ aside{
     flex: 1;
     overflow-y: auto;
 }
+
+header{
+    background-color: brown;
+}
+
+footer{
+    background-color: brown;
+    color: aliceblue;
+}
+
+footer p a{
+    color: blue;
+    text-decoration: underline;
+}
+
+article > a > img {
+    background-color: rgb(213, 112, 216);
+}
+
+article > h1 {
+    color: coral;
+}
+
+ul .logo{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
