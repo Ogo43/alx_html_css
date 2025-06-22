@@ -321,3 +321,11 @@ footer p {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .what-we-do-cards div,
+  .results-wrapper {
+    flex: 1 1 45%; /* roughly half the container width */
+    max-width: 45%;
+  }
+}
