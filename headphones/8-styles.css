@@ -33,7 +33,9 @@ header{
   border-radius: 2px;
 }
 
-
+.nav-links {
+  transition: all 0.3s ease-in-out;
+}
 /* Media query for mobile */
 @media (max-width: 480px) {
   .menu-toggle {
