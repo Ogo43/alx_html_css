@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.contact-us-form h1 {
+  font-weight: 600;
+  text-align: center;
+  margin: 7rem 0 3rem;
+}
+
+.contact-us-form div {
+  margin-bottom: 2rem;
+}
+
+.contact-us-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"],
+.contact-us-form textarea {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  border-bottom: 1px solid #979797;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  resize: none;
+}
+
+.contact-us-form input:focus,
+.contact-us-form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #ff6565;
+}
+
+.contact-us-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.contact-us-btn button {
+  background-color: #ff6565;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-us-btn button:hover {
+  background-color: #e14b4b;
+}

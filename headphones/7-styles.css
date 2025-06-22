@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Section Titles */
+.what-we-do-section,
+.our-result-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #f7f7f7;
+}
+
+.what-we-do-section h1,
+.our-result-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #071629;
+}
+
+.what-we-do-section p,
+.our-result-section p {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-inline: auto;
+  color: #555;
+}
+
+/* Card Containers */
+.what-we-do-cards,
+.results-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Shared Card Styling */
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease-in-out both;
+}
+
+.card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* What We Do Icons */
+.card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* Card Headings */
+.card h3 {
+  font-size: 1.2rem;
+  color: #ff6565;
+  margin-bottom: 0.5rem;
+}
+
+/* Card Paragraph */
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Pentagon Shape (CSS only) */
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6565;
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #071629;
+  color: #7c7c7c;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-wrapper img {
+  width: 120px;
+}
+
+.social-links a img {
+  width: 24px;
+  height: auto;
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+}

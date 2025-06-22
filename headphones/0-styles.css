@@ -175,12 +175,16 @@ body {
   margin-top: 2.5rem;
 }
 .contact-us-form input[type="text"],
-.contact-us-form input[type="email"] {
+.contact-us-form input[type="email"],
+.contact-us-form textarea {
   width: 100%;
   border: none;
   font-size: 1rem;
   font-weight: 400;
   border-bottom: 1px solid #979797;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  resize: none;
 }
 .contact-us-btn {
   display: flex;
@@ -217,18 +221,18 @@ footer p {
 }
 
 @media (max-width: 480px) {
-  header{
+  header {
     height: 15vh;
   }
   .nav-section {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 0 1rem;
-  flex-direction: row; /* FIXED */
-  gap: 1rem;
-  text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+    flex-direction: row; /* FIXED */
+    gap: 1rem;
+    text-align: center;
   }
   .menu-toggle {
     position: absolute;
@@ -247,26 +251,26 @@ footer p {
     background-color: #fff;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
-  transform-origin: center;
+    transform-origin: center;
   }
   .menu-toggle .cut {
     width: 18px;
   }
   .menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(12px);
-}
+    transform: rotate(45deg) translateY(12px);
+  }
 
-.menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-.menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-12px);
-}
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+  }
   .nav-section .nav-links {
     display: none;
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 0;
     flex-direction: column;
     width: 100%;
